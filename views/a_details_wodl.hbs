@@ -1,0 +1,15 @@
+<html>
+<body>
+  {{adhaarid}} <br>
+  {{name}} <br>
+  {{age}} <br>
+  {{gender}} <br>
+  {{dob}} <br>
+  <p><a href="adhaar_home.html"><button>Go To Adhaar Portal</button></a></p><br>
+  <form action="/new_dl" method="post">
+    <input type="submit" value="Make a new driving license"/>
+    <input type="hidden" name="name" value= {{name}} />
+    <input type="hidden" name="adhaarid" value= {{adhaarid}} />
+  </form>
+</body>
+</html>

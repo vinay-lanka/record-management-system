@@ -1,0 +1,15 @@
+<html>
+<body>
+  Make a new Driving License for {{name}} <br>
+  Adhaar id : {{adhaarid}}<br>
+
+  <form action="/made_dl" method="post">
+    <input type="text" name="dlid" value= "Enter Driving License ID here" required/>
+    <input type="date" name="doi" value= "Date of Issue" required/>
+    <input type="text" name="password" value= "Enter Password to make driving license" required/>
+    <input type="hidden" name="name" value= {{name}} />
+    <input type="hidden" name="adhaarid" value= {{adhaarid}} />
+    <input type="submit" value="Submit"/>
+  </form>
+</body>
+</html>

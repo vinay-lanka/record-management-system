@@ -1,12 +1,12 @@
 <html>
 <body>
   Make a new Adhaar ID
-  <form action="/made_adhaar" method="GET">
+  <form action="/made_adhaar" method="post">
     <input type="text" name="adhaarid" value= "Enter Adhaar ID here" required/>
     <input type="text" name="name" value= "Name" required/>
-    <input type="text" name="age" value= "Age" required/>
+    <input type="number" name="age" value= "Age" required/>
     <input type="text" name="gender" value= "Gender" required/>
-    <input type="text" name="date of birth" value= "Date of Birth" required/>
+    <input type="date" name="dob" value= "Date of Birth" required/>
     <input type="text" name="password" value= "Enter Password to make a new adhaar id" required/>
     <input type="submit" value="Submit"/>
   </form>

@@ -1,8 +1,9 @@
 <html>
 <body>
   Welcome to the Adhaar Portal!
-  <form action="/signin_adhaar" method="GET">
+  <form action="/signin_adhaar" method="post">
     <input type="text" name="adhaarid" value= "Enter Adhaar ID here" required/>
+    <input type="text" name="password" value= "Password" required/>
     <input type="submit" value="Submit" />
   </form>
   <a href="adhaar_new.html"><button>Make a new Adhaar id</button></a>
