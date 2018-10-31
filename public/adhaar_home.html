@@ -1,11 +1,26 @@
 <html>
-<body>
-  Welcome to the Adhaar Portal!
+<body background = "background.jpg">
+  <style>
+  .button {
+      background-color: #000000; /* Green */
+      border: none;
+      color: #EFEFEF;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+  }
+  </style>
+  <br><br>
+<center><font face="Arial" color = "#EFEFEF" size = "15" >Welcome to the Adhaar Portal!</font><br>
+  <br>
   <form action="/signin_adhaar" method="post">
-    <input type="text" name="adhaarid" value= "Enter Adhaar ID here" required/>
-    <input type="text" name="password" value= "Password" required/>
-    <input type="submit" value="Submit" />
+    <input type="text" name="adhaarid" value= "Enter Adhaar ID here" required/><br><br>
+    <input type="text" name="password" value= "Password" required/><br><br>
+    <input type="submit" value="Submit" /><br><br>
   </form>
-  <a href="adhaar_new.html"><button>Make a new Adhaar id</button></a>
+  <a href="adhaar_new.html"><div class ="button"><font face="Arial" color = "#EFEFEF">Make a new Adhaar id</font></button></div></a>
+</center>
 </body>
 </html>

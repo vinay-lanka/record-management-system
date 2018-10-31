@@ -1,10 +1,22 @@
 <html>
-<body>
-  Driving License Details <br>
-  {{adhaarid}} <br>
-  {{name}} <br>
-  {{dlid}} <br>
-  {{doi}} <br>
-  <p><a href="adhaar_home.html"><button>Go To Adhaar Portal</button></a></p><br>
+<body background = "background.jpg">
+  <style>
+  .button {
+      background-color: #000000; /* Green */
+      border: none;
+      color: #EFEFEF;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+  }
+  </style>
+<font face="Arial" color = "#EFEFEF" size = "5" >  Driving License Details <br>
+adhaarid:  {{adhaarid}} <br>
+Name:  {{name}} <br>
+Driving License:  {{dlid}} <br>
+Date of issue:  {{doi}} <br></font>
+  <p><a href="adhaar_home.html"><div class ="button">Go To Adhaar Portal</div></a></p><br>
 </body>
 </html>

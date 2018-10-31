@@ -1,11 +1,23 @@
 <html>
-<body>
-  {{adhaarid}} <br>
-  {{name}} <br>
-  {{age}} <br>
-  {{gender}} <br>
-  {{dob}} <br>
-  <p><a href="adhaar_home.html"><button>Go To Adhaar Portal</button></a></p><br>
+<body background = "background.jpg">
+  <style>
+  .button {
+      background-color: #000000; /* Green */
+      border: none;
+      color: #EFEFEF;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+  }
+  </style>
+  <font face="Arial" color = "#EFEFEF" size = "5" > Adhaar id:{{adhaarid}} <br>
+  Name: {{name}} <br>
+  Age: {{age}} <br>
+  Gender: {{gender}} <br>
+  Date of birth: {{dob}} <br></font>
+  <p><a href="adhaar_home.html"><div class ="button">Go To Adhaar Portal</div></a></p><br>
   <form action="/new_dl" method="post">
     <input type="submit" value="Make a new driving license"/>
     <input type="hidden" name="name" value= {{name}} />
